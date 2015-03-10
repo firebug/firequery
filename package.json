@@ -1,0 +1,26 @@
+{
+  "title": "FireQuery",
+  "name": "firequery",
+  "version": "2.0.0-beta.0",
+  "id": "firequery@binaryage.com",
+  "description": "Firefox plugin for jQuery development",
+  "main": "index.js",
+  "author": "Jan Odvarko (Mozilla Corp.)",
+  "engines": {
+    "firefox": ">=36.0"
+  },
+  "license": "BSD License",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firebug/firequery.git"
+  },
+  "dependencies": {
+    "firebug.sdk": "0.5.1"
+  },
+  "bugs": {
+    "url": "https://github.com/firebug/firequery/issues"
+  },
+  "preferences-branch": "firequery",
+  "preferences": [
+  ]
+}
