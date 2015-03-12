@@ -1,11 +1,12 @@
 /* See license.txt for terms of usage */
 
-.kind-jQueryObject .cm-variable {
+.kind-jQuery .cm-variable {
   color: #4B0082;
 }
 
-.kind-jQueryObject .jQueryCache {
+.kind-jQuery .cache {
   font-size: 11px;
   color: #4B0082;
   margin-left: 2px;
+  cursor: pointer;
 }
