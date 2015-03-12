@@ -3,3 +3,9 @@
 .kind-jQueryObject .cm-variable {
   color: #4B0082;
 }
+
+.kind-jQueryObject .jQueryCache {
+  font-size: 11px;
+  color: #4B0082;
+  margin-left: 2px;
+}
