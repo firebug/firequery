@@ -1,7 +1,8 @@
 FireQuery
 =========
 
-Firefox plugin for jQuery development
+Firefox plugin for jQuery development. Built on top of native
+developer tools in Firefox.
 
 ![](https://raw.githubusercontent.com/firebug/firequery/master/docs/images/console.png)
 
