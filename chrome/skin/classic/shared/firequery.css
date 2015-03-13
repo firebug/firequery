@@ -1,5 +1,8 @@
 /* See license.txt for terms of usage */
 
+/******************************************************************************/
+/* Console Panel */
+
 .kind-jQuery .cm-variable {
   color: #4B0082;
 }
@@ -9,4 +12,17 @@
   color: #4B0082;
   margin-left: 2px;
   cursor: pointer;
+}
+
+/******************************************************************************/
+/* Inspector Panel */
+
+.fireQueryNodeData {
+  font-size: 90%;
+  color: #4B0082;
+  background-color: #ddd;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 0px 4px;
+  border-radius: 2px;
 }
