@@ -3,6 +3,8 @@ FireQuery
 
 Firefox plugin for jQuery development
 
+![](https://raw.githubusercontent.com/firebug/firequery/master/docs/images/console.png)
+
 License
 -------
 FireQuery is free and open source software distributed under the
