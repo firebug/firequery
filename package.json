@@ -21,6 +21,35 @@
     "url": "https://github.com/firebug/firequery/issues"
   },
   "preferences-branch": "firequery",
-  "preferences": [
-  ]
+  "preferences": [{
+    "name": "jQueryURL",
+    "title": "jQueryURL",
+    "description": "",
+    "type": "string",
+    "value": "chrome://firequery-resources/content/jquery.js"
+  }, {
+    "name": "jQueryURLTimeout",
+    "title": "jQueryURLTimeout",
+    "description": "",
+    "type": "integer",
+    "value": 5000
+  }, {
+    "name": "jQueryLintURL",
+    "title": "jQueryLintURL",
+    "description": "",
+    "type": "string",
+    "value": "chrome://firequery-resources/content/jquery.lint.js"
+  }, {
+    "name": "jQueryLintURLTimeout",
+    "title": "jQueryLintURLTimeout",
+    "description": "",
+    "type": "integer",
+    "value": 5000
+  }, {
+    "name": "useLint",
+    "title": "useLint",
+    "description": "",
+    "type": "bool",
+    "value": false
+  }]
 }
