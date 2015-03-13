@@ -5,7 +5,13 @@
   "id": "firequery@binaryage.com",
   "description": "Firefox plugin for jQuery development",
   "main": "index.js",
+  "icon": "chrome://firequery/skin/firequery-icon.png",
   "author": "Jan Odvarko (Mozilla Corp.)",
+  "contributors": [
+    "Antonin Hildebrand"
+  ],
+  "homepage": "https://github.com/firebug/firequery/wiki",
+  "forum": "https://groups.google.com/forum/#!forum/firebug",
   "engines": {
     "firefox": ">=36.0"
   },
