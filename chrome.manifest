@@ -1,5 +1,5 @@
 content firequery               chrome/content/
-content firequery-resources     chrome/resources/
+content firequery-resources     chrome/resources/ contentaccessible=yes
 skin    firequery classic/1.0   chrome/skin/classic/shared/
 
 locale  firequery en-US         chrome/locale/en-US/
