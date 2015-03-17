@@ -10,13 +10,13 @@ when Firebug theme is activated.
 
 Try it for yourself:
 
-1. Install [FireQuery](https://github.com/firebug/firequery/releases)
+1. Install [FireQuery](https://github.com/firebug/firequery/releases) (currently beta)
 2. Load `http://getfirebug.com/`
 3. Execute `$('span')` on Console panel Command line.
 4. Check out the `jQuery` object logged in the Console panel.
 
-Note that elements with `jQuery data` associated display a little envelop.
-You can inspect the data by clicking on the envelop.
+Note that elements with [jQuery data](http://api.jquery.com/data/) associated
+display a little envelop. You can inspect the data by clicking on the envelop.
 
 License
 -------
