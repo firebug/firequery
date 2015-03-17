@@ -2,9 +2,13 @@ FireQuery
 =========
 
 Firefox plugin for jQuery development. Built on top of native
-developer tools in Firefox.
+developer tools in Firefox. [Firebug 3] isn't required, but the
+next screenshots shows how native developer tools loook like
+when Firebug theme is activated.
 
 ![](https://raw.githubusercontent.com/firebug/firequery/master/docs/images/console.png)
+
+
 
 License
 -------
