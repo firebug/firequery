@@ -8,6 +8,8 @@ when Firebug theme is activated.
 
 ![](https://raw.githubusercontent.com/firebug/firequery/master/docs/images/console.png)
 
+![](https://raw.githubusercontent.com/firebug/firequery/master/docs/images/inspector.png)
+
 Try it for yourself:
 
 1. Install [FireQuery](https://github.com/firebug/firequery/releases) (currently beta)
@@ -16,7 +18,8 @@ Try it for yourself:
 4. Check out the `jQuery` object logged in the Console panel.
 
 Note that elements with [jQuery data](http://api.jquery.com/data/) associated
-display a little envelop. You can inspect the data by clicking on the envelop.
+display a little envelop in the Console panel. You can inspect the data by clicking
+on the envelop. The Inspector panel displays direct preview of the data.
 
 License
 -------
