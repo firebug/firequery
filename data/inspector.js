@@ -9,18 +9,22 @@ const React = require("react");
  * Post message to the chrome through DOM event dispatcher.
  * (there is no message manager for the markupview.xhtml frame).
  */
-function postChromeMessage(type, data) {
+function postChromeMessage(type, args) {
+  var data = {
+    type: type,
+    args: args,
+  };
+
   const event = new MessageEvent("firequery/message", {
     bubbles: true,
     cancelable: true,
-    type: type,
     data: data,
   });
 
   dispatchEvent(event);
 }
 
-postChromeMessage("test", "a message from the content");
+postChromeMessage("initialize");
 
 // End of inspector.js
 });
