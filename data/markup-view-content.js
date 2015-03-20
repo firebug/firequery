@@ -3,16 +3,7 @@
 define(function(require, exports, module) {
 
 // Dependencies
-const React = require("react");
-const { Reps } = require("reps/reps");
-
-// Reps
-// xxxHonza: list of reps should be included automatically
-require("reps/undefined");
-require("reps/string");
-require("reps/number");
-require("reps/array");
-require("reps/object");
+const { Reps } = require("reps/repository");
 
 /**
  * Post message to the chrome through DOM event dispatcher.
@@ -59,7 +50,7 @@ function renderData(nodes) {
 
     // Get proper template for given value and render.
     var rep = Reps.getRep(value);
-    React.render(rep({object: value}), parentNode);
+    Reps.render(rep, value, parentNode);
   }
 }
 
