@@ -52,6 +52,12 @@
     "type": "integer",
     "value": 5000
   }, {
+    "name": "watcherInterval",
+    "title": "watcherInterval",
+    "description": "",
+    "type": "integer",
+    "value": 1000
+  }, {
     "name": "useLint",
     "title": "useLint",
     "description": "",
