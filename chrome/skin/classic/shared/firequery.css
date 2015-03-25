@@ -7,7 +7,7 @@
   color: #4B0082;
 }
 
-.kind-jQuery .cache {
+.kind-jQuery .data {
   font-size: 11px;
   color: #4B0082;
   margin-left: 2px;
@@ -17,7 +17,7 @@
 /******************************************************************************/
 /* Inspector Panel */
 
-.fireQueryNodeData {
+.fireQueryData {
   font-size: 90%;
   color: #4B0082;
   background-color: #ddd;

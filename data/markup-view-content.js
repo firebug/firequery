@@ -44,9 +44,9 @@ addEventListener("firequery/chrome/message", event => {
 function renderData(nodes) {
   for (var i=0; i<nodes.length; i++) {
     var node = nodes[i];
-    var value = node.cache;
+    var value = node.jQueryData;
     var element = node.element;
-    var parentNode = element.querySelector(".fireQueryNodeData");
+    var parentNode = element.querySelector(".fireQueryData");
 
     // Get proper template for given value and render.
     var rep = Reps.getRep(value);
