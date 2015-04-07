@@ -2,6 +2,6 @@ content firequery                 chrome/content/
 content firequery-resources       chrome/resources/ contentaccessible=yes
 
 skin    firequery classic/1.0     chrome/skin/classic/shared/
-skin    firebug.sdk classic/1.0   node_modules/firebug.sdk/css/classic/shared/
+skin    firebug.sdk classic/1.0   node_modules/firebug.sdk/skin/classic/shared/
 
 locale  firequery en-US           chrome/locale/en-US/
