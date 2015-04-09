@@ -1,10 +1,12 @@
-FireQuery
-=========
+FireQuery 2.0
+=============
 
 Firefox plugin for jQuery development. Built on top of native
 developer tools in Firefox. [Firebug 3] isn't required, but the
 screen-shot below shows how native developer tools look like
 when Firebug theme is activated.
+
+Use of the previous version (FireQuery 1) is not recommended.
 
 ![](https://raw.githubusercontent.com/firebug/firequery/master/docs/images/console.png)
 
