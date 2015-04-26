@@ -25,7 +25,7 @@ function postChromeMessage(type, args) {
 }
 
 /**
- * xxxHonza TODO docs
+ * Listen for messages from the Inspector panel (chrome scope).
  */
 addEventListener("firequery/chrome/message", event => {
   var data = event.data;
@@ -37,9 +37,9 @@ addEventListener("firequery/chrome/message", event => {
 }, true);
 
 /**
- * xxxHonza TODO docs
+ * Render jQuery data associated with DOM elements.
  *
- * @param nodes
+ * @param nodes List of nodes that have jQuery data associated.
  */
 function renderData(nodes) {
   for (var i=0; i<nodes.length; i++) {
