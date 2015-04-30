@@ -1,28 +1,15 @@
 /* See license.txt for terms of usage */
 
 /******************************************************************************/
-/* Console Panel */
 
 .kind-jQuery .cm-variable {
   color: #4B0082;
 }
 
+.fireQueryData,
 .kind-jQuery .data {
   font-size: 11px;
   color: #4B0082;
   margin-left: 2px;
   cursor: pointer;
-}
-
-/******************************************************************************/
-/* Inspector Panel */
-
-.fireQueryData {
-  font-size: 90%;
-  color: #4B0082;
-  background-color: #ddd;
-  margin-left: 3px;
-  margin-right: 3px;
-  padding: 1px 4px 0px 4px;
-  border-radius: 2px;
 }
