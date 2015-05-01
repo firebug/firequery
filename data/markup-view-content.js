@@ -57,6 +57,4 @@ function renderData(nodes) {
 // Final initialize message posted to the chrome indicating that
 // all content modules has been successfully loaded.
 postChromeMessage("ready");
-
-// End of inspector.js
 });

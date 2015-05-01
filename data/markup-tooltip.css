@@ -8,6 +8,7 @@ body {
   height: 100%;
 }
 
+/* Do not display bottom border for the last DOM tree row */
 .domTable > tbody > tr:last-child > td {
   border-bottom: none;
 }

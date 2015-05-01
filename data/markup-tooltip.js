@@ -7,6 +7,13 @@ var React = require("react");
 const { Reps } = require("reps/repository");
 const { TreeView } = require("reps/tree-view");
 
+// xxxHonza: API in this file implements mostly the communication
+// between content and chrome scope. It duplicates API already
+// presented in markup-view-content.js
+// It would be great to have common module that can be included
+// in a content scope and installing the communication channel
+// automatically.
+
 /**
  * Post message to the chrome through DOM event dispatcher.
  * (there is no message manager for the markupview.xhtml frame).
@@ -66,5 +73,4 @@ function renderContent(value) {
 // Final initialize message posted to the chrome indicating that
 // all content modules has been successfully loaded.
 postChromeMessage("ready");
-
 });

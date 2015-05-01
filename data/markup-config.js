@@ -9,5 +9,5 @@ require.config({
   }
 });
 
-// Load the main panel module
+// Load the main tooltip module
 requirejs(["markup-tooltip"]);
