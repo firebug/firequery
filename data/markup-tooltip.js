@@ -33,6 +33,9 @@ function postChromeMessage(type, args) {
   dispatchEvent(event);
 }
 
+/**
+ * Returns ideal size of the tooltip required by the content.
+ */
 function getRequiredSize() {
   var tree = document.querySelector(".domTable");
   return {
@@ -58,6 +61,9 @@ addEventListener("firequery/chrome/message", event => {
   }
 }, true);
 
+/**
+ * Render tooltip content (expandable tree)
+ */
 function renderContent(value) {
   var tree = TreeView({
     data: JSON.parse(value),
