@@ -6,8 +6,10 @@
   "description": "Firefox plugin for jQuery development",
   "main": "index.js",
   "icon": "chrome://firequery/skin/firequery-icon.png",
-  "author": "Jan Odvarko (Mozilla Corp.)",
+  "author": "Firebug Working Group",
   "contributors": [
+    "Jan Odvarko (Mozilla Corp.)",
+    "Alistair Laing",
     "Antonin Hildebrand"
   ],
   "homepage": "https://github.com/firebug/firequery/wiki",
