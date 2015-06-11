@@ -5,3 +5,7 @@ skin    firequery              classic/1.0      chrome/skin/classic/shared/
 skin    firequery-firebug.sdk  classic/1.0      node_modules/firebug.sdk/skin/classic/shared/
 
 locale  firequery en-US           chrome/locale/en-US/
+
+locale  firequery-firebug.sdk  en-US   node_modules/firebug.sdk/locale/en-US/
+locale  firequery-firebug.sdk  zh-CN   node_modules/firebug.sdk/locale/zh-CN/
+locale  firequery-firebug.sdk  nl      node_modules/firebug.sdk/locale/nl/
