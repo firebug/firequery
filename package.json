@@ -60,6 +60,12 @@
     "type": "integer",
     "value": 1000
   }, {
+    "name": "maxItemsRendered",
+    "title": "maxItemsRendered",
+    "description": "",
+    "type": "integer",
+    "value": 400
+  }, {
     "name": "useLint",
     "title": "useLint",
     "description": "",
