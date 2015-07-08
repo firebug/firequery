@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/firebug/firequery/issues"
   },
-  "preferences-branch": "firebug.firequery",
+  "preferences-branch": "extensions.firebug.firequery",
   "preferences": [{
     "name": "jQueryURL",
     "title": "jQueryURL",
