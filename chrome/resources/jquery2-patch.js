@@ -25,17 +25,17 @@
         newValues: newValues
       };*/
       // send event for each matched element
-      this.each(function() {
-        var event = new CustomEvent("firequery-event"/*, { "detail": detail }*/);
-        this.dispatchEvent(event);
-      });
+      //this.each(function() {
+      //  var event = new CustomEvent("firequery-event"/*, { "detail": detail }*/);
+      //  this.dispatchEvent(event);
+      //});
       // simulate original return value
       return res;
     };
   };
 
-  $.fn.data = wrap(originalDataFn);
-  $.fn.removeData = wrap(originalRemoveDataFn);
+  //$.fn.data = wrap(originalDataFn);
+  //$.fn.removeData = wrap(originalRemoveDataFn);
 
   // wrap data calls on jQuery object
 
@@ -55,8 +55,11 @@
         newValues: newValues
       };*/
       // send event
-      var event = new CustomEvent("firequery-event"/*, { "detail": detail }*/);
-      elem.dispatchEvent(event);
+      if (elem instanceof HTMLElement) {
+        var event = new CustomEvent("firequery-event"/*, { "detail": detail }*/);
+        elem.dispatchEvent(event);
+      }
+
       // simulate original return value
       return res;
     };
