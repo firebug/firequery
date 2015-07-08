@@ -55,6 +55,7 @@
         newValues: newValues
       };*/
       // send event
+      // xxxHonza: the event is sent twice from some reason (removeData is called automatically?).
       if (elem instanceof HTMLElement) {
         var event = new CustomEvent("firequery-event"/*, { "detail": detail }*/);
         elem.dispatchEvent(event);
