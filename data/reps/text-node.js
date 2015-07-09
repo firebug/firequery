@@ -40,7 +40,7 @@ var TextNode = React.createClass(
     return (
       ObjectLink({className: "textNode"},
         "<",
-        SPAN({"class": "nodeTag"}, "TextNode"),
+        SPAN({className: "nodeTag"}, "TextNode"),
         " textContent=\"",
         SPAN({className: "nodeValue"},
           this.getTextContent(grip)

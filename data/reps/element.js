@@ -32,7 +32,7 @@ var Element = React.createClass(
 
     if (mode == "tiny") {
       return (
-        ObjectLink({className: ""}, 
+        ObjectLink({className: "element", object: grip},
           SPAN({className: ""},
             SPAN({className: "selectorTag"},
               this.getSelectorTag(grip)

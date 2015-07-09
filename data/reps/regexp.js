@@ -26,9 +26,9 @@ var RegExp = React.createClass(
     var grip = this.props.object;
     return (
       ObjectLink({className: "regexp"},
-        SPAN({"class": "objectTitle"}, this.getTitle(grip)),
+        SPAN({className: "objectTitle"}, this.getTitle(grip)),
         SPAN(" "),
-        SPAN({"class": "regexpSource"}, this.getSource(grip))
+        SPAN({className: "regexpSource"}, this.getSource(grip))
       )
     )
   },

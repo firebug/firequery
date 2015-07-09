@@ -132,6 +132,17 @@ function getRequiredSize() {
  */
 addEventListener("click", updateSize);
 
+/**
+ * Navigation within the toolbox
+ */
+function onNavigate(event) {
+  var target = event.target;
+  var repObject = event.detail.repObject;
+
+  postChromeMessage("navigate", repObject);
+}
+addEventListener("fbsdk:navigate", onNavigate, true);
+
 // Final initialize message posted to the chrome indicating that
 // all content modules has been successfully loaded.
 postChromeMessage("ready");
