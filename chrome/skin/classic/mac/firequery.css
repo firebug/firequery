@@ -1,0 +1,14 @@
+/* See license.txt for terms of usage */
+
+/******************************************************************************/
+/* OSX Specific Styles for FireQuery */
+
+.fireQueryData,
+.kind-jQuery .data {
+  font-size: 14px;
+  vertical-align: baseline;
+  line-height: 1.4em;
+  color: #4B0082;
+  margin-left: 3px;
+  cursor: pointer;
+}
