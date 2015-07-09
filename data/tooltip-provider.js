@@ -59,8 +59,28 @@ TooltipProvider.prototype =
   hasChildren: function(object) {
     if (object instanceof Property) {
       var value = this.getValue(object);
-      return (value && value.type == "object" &&
-        value.ownPropertyLength > 0);
+      if (!value) {
+        return false;
+      }
+
+      var hasChildren = value.ownPropertyLength > 0;
+
+      // xxxHonza: Support for Fx40 (grip.ownPropertyLength doesn't exist)
+      if (value.preview) {
+        hasChildren = hasChildren || value.preview.ownPropertiesLength > 0;
+      }
+
+      // xxxHonza: Support (rather a workaround) for Fx39
+      // (grip.preview.ownPropertiesLength doesn't exist)
+      if (value.preview) {
+        var preview = value.preview;
+        var kind = preview.kind;
+        var objectsWithProps = ["DOMNode", "ObjectWithURL"];
+        hasChildren = hasChildren || (objectsWithProps.indexOf(kind) != -1);
+        hasChildren = hasChildren || (kind == "ArrayLike" && preview.length > 0);
+      }
+
+      return (value.type == "object" && hasChildren);
     }
   },
 
