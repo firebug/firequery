@@ -43,7 +43,7 @@
   var originalRemoveData = $.originalRemoveDataReplacedByFireQuery = $.removeData;
 
   var wrap2 = function(originalImp) {
-    return function(elem) {
+    return function(elem, name, value, forceInternals) {
       // snapshot previous state, apply original implementation, snapshot new state
       //var oldValues = $.extend(true, {}, originalData.apply(this, [elem])); // need to do a deep copy of the whole structure
       var res = originalImp.apply(this, arguments);
@@ -54,6 +54,14 @@
         oldValues: oldValues,
         newValues: newValues
       };*/
+
+      // Avoid recursion when FireQuery itself is accessing jQuery.data
+      // xxxHonza: FireQuery needs a way how to access the original
+      // $.originalDataReplacedByFireQuery() method FIXME
+      if (forceInternals) {
+        return res;
+      }
+
       // send event
       // xxxHonza: the event is sent twice from some reason (removeData is called automatically?).
       if (elem instanceof HTMLElement) {
