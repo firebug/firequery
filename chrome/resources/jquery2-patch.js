@@ -62,8 +62,9 @@
         return res;
       }
 
-      // send event
-      // xxxHonza: the event is sent twice from some reason (removeData is called automatically?).
+      // Send notification event to FireQuery. It's forwarded
+      // through RDP connection to the client, so the Inspector
+      // panel UI can be updated.
       if (elem instanceof HTMLElement) {
         var event = new CustomEvent("firequery-event"/*, { "detail": detail }*/);
         elem.dispatchEvent(event);
