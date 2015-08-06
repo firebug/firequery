@@ -7,29 +7,13 @@ var React = require("react");
 
 // Firebug SDK
 const { TreeView } = require("reps/tree-view");
+const { Reps } = require("reps/repository");
 
 // FireQuery
 const { TooltipProvider } = require("./tooltip-provider");
 const { GripStore } = require("./grip-store");
 const { Dispatcher } = require("./dispatcher");
 const { TooltipContent } = require("./tooltip-content");
-
-// Grip based reps
-// TODO: move into Firebug.SDK as soon as it's stable.
-require("./reps/regexp.js");
-require("./reps/stylesheet.js");
-require("./reps/event.js");
-require("./reps/date-time.js");
-require("./reps/css-rule.js");
-require("./reps/text-node.js");
-require("./reps/named-node-map.js");
-require("./reps/attribute.js");
-require("./reps/function.js");
-require("./reps/array.js");
-require("./reps/element.js");
-require("./reps/document.js");
-require("./reps/window.js");
-require("./reps/grip.js");
 
 var theApp;
 
