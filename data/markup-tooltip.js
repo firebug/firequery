@@ -29,11 +29,20 @@ var rootGrip;
 /**
  * Render tooltip content (expandable tree)
  */
-function initialize(grip) {
-  rootGrip = JSON.parse(grip);
+function initialize(data) {
+  rootGrip = JSON.parse(data.grip);
 
-  Trace.sysout("MarkupTooltip; initialize " + rootGrip.actor, rootGrip);
+  Trace.sysout("MarkupTooltip; initialize " + rootGrip.actor, {
+    data: data,
+    rootGrip: rootGrip
+  });
 
+  // Set the current theme. The value comes directly from
+  // 'devtools.theme' preference, so make sure to properly
+  // convert it into class name.
+  document.body.classList.add("theme-" + data.theme);
+
+  // Get content ready for rendering.
   var store = new GripStore();
   var content = TooltipContent({
     provider: new TooltipProvider(store),
@@ -41,6 +50,7 @@ function initialize(grip) {
     mode: "tiny"
   });
 
+  // ... and render the top level RJS component.
   theApp = React.render(content, document.querySelector("#content"));
 }
 

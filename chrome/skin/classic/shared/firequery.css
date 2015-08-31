@@ -1,15 +1,37 @@
 /* See license.txt for terms of usage */
 
 /******************************************************************************/
+/* Markup View */
 
-.kind-jQuery .cm-variable {
+.theme-firebug .kind-jQuery .cm-variable {
   color: #4B0082;
 }
 
 .fireQueryData,
 .kind-jQuery .data {
   font-size: 11px;
-  color: #4B0082;
   margin-left: 2px;
   cursor: pointer;
+}
+
+/******************************************************************************/
+/* Toolbox Tooltip */
+
+.theme-tooltip-panel .panel-arrowcontent {
+  padding: 0;
+}
+
+/******************************************************************************/
+/* Light & Dark Themes */
+
+.theme-light .fireQueryData,
+.theme-light .kind-jQuery .data,
+.theme-dark .fireQueryData,
+.theme-dark .kind-jQuery .data {
+  color: var(--theme-highlight-pink);
+}
+
+.theme-firebug .fireQueryData,
+.theme-firebug .kind-jQuery .data {
+  color: #4B0082;
 }
