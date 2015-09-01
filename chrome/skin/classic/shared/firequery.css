@@ -17,8 +17,9 @@
 /******************************************************************************/
 /* Toolbox Tooltip */
 
+/* Use !important to overload rules with theme prefixes */
 .theme-tooltip-panel .panel-arrowcontent {
-  padding: 0;
+  padding: 0 !important;
 }
 
 /******************************************************************************/
