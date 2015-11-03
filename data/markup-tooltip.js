@@ -41,6 +41,7 @@ function initialize(data) {
   // 'devtools.theme' preference, so make sure to properly
   // convert it into class name.
   document.body.classList.add("theme-" + data.theme);
+  document.documentElement.classList.add("theme-" + data.theme);
 
   // Get content ready for rendering.
   var store = new GripStore();
