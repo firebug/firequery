@@ -17,7 +17,7 @@
   "engines": {
     "firefox": ">=40.0a1"
   },
-  "license": "BSD License",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "https://github.com/firebug/firequery.git"
