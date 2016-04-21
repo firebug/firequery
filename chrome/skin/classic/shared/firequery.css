@@ -17,7 +17,8 @@
 /******************************************************************************/
 /* Toolbox Tooltip */
 
-/* Use !important to overload rules with theme prefixes */
+/* Use !important to overload rules with theme prefixes. Note that size
+  of the tooltip is dynamically computed in data-tooltip.js */
 .theme-tooltip-panel .panel-arrowcontent {
   padding: 0 !important;
 }
